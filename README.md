@@ -1,38 +1,34 @@
-# **Computer Vision Annotation Tool (CV Studio)**  
+# CV Studio
 
-Proyecto para procesar imágenes, crear anotaciones (bounding boxes, segmentación) y generar datasets listos para entrenar modelos de visión por computadora.  
+CV Studio is a graphical user interface (GUI) tool designed for image annotation and labeling. It allows users to easily annotate images by drawing bounding boxes or polygons and associate labels with them. The software supports different output formats, such as YOLO and COCO, and provides zooming features for better interaction with the images. It is especially useful for training machine learning models with labeled datasets.
 
----
+## Features
 
-## **📌 Características**  
+- **Image Loading**: Load multiple images from a directory for annotation.
+- **Bounding Box and Polygon Annotation**: Draw bounding boxes and polygons to annotate objects in images.
+- **Class Management**: Add, remove, and load classes for annotation.
+- **Zooming**: Zoom in and out of images to make detailed annotations.
+- **Multiple Output Formats**: Export annotations in YOLO or COCO format.
+- **File Management**: Open and save images, load and save annotation classes.
+- **User-Friendly Interface**: Designed using PyQt5 for a modern and responsive interface.
 
-✅ **Carga de imágenes**
+## Requirements
 
-- Soporta formatos comunes (JPG, PNG, BMP).  
-- Previsualización en la interfaz.  
+To run this project, you need to install the following dependencies:
 
-✅ **Redimensionamiento (Resizing)**
+- Python 3.x
+- PyQt5
 
-- Ajuste proporcional o forzado a dimensiones personalizadas.  
+You can install the required libraries using pip:
 
-✅ **Etiquetado (Labeling)**
+```bash
+pip install PyQt5
+```
 
-- Dibuja bounding boxes con clases personalizables.  
-- Edición/eliminación de anotaciones existentes.  
+## Installation
 
-✅ **Segmentación (Masking)**
+1.- Clone the repository:
+```bash
+https://github.com/Arian220/CV-Studio
+```
 
-- Herramienta de polígonos para máscaras.  
-- Exporta máscaras en formato binario o PNG.  
-
-✅ **Generación de Datasets**
-
-- Guarda imágenes y anotaciones en carpetas locales.  
-- Formatos soportados:  
-  - **YOLO** (`.txt`): `[class_id, x_center, y_center, width, height]`.  
-  - **COCO** (`.json`): Estructura compatible con otros frameworks.  
-
-✅ **Interfaz de Usuario (UI)**  
-
-- Navegación entre imágenes.  
-- Lista de clases editables.  
